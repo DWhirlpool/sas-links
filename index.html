@@ -7,9 +7,10 @@
     <title>sas-links</title>
     <link rel="stylesheet" href="./main.css" />
     <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+    <script src="./app.js"></script>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
-<body>
+<body id="app" class="light">
     <br/>
     <fluent-tabs activeid="students">
         <fluent-tab id="students">Students</fluent-tab>
@@ -76,5 +77,9 @@
             &nbsp;&nbsp;&nbsp;<fluent-button onclick="window.open('https://saschina.foliocollaborative.org/dashboard');"><img style="border-radius: 3px;" width="20" height="20" src="https://d32qgxcs379cpl.cloudfront.net/favicon.ico" /> Folio</fluent-button>     
         </fluent-tab-panel>
     </fluent-tabs>
+    <fluent-select>
+        <fluent-option value="1" onclick="toggle();">Light Mode</fluent-option>
+        <fluent-option value="2" onclick="toggle();">Dark Mode</fluent-option>
+    </fluent-select>
 </body>
 </html>

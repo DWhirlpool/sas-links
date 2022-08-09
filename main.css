@@ -1,5 +1,17 @@
-body {
+.dark {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, lightseagreen, indigo);
+}
+
+.light {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #2188ff 0%, #804eda 100%);
+}
+
+fluent-select {
+    position: fixed;
+    top: 5px;
+    right: 5px;
 }
